@@ -1,7 +1,7 @@
 import pygame
 from ajustes import tile, azul
 
-#objeto que representa el robot/personaje principal
+#clase que representa el robot/personaje principal
 
 class Player():
     def __init__(self, laberinto):
@@ -36,4 +36,3 @@ class Player():
 
     def draw(self, screen):
         pygame.draw.rect(screen, self.color, (self.x*tile, self.y*tile, tile, tile))
-        

@@ -1,7 +1,7 @@
 import pygame
 from ajustes import tile, blanco
 
-#objeto que representa el mapa 
+#clase que representa el mapa (nivel 1)
 
 class Laberinto():
     def __init__(self):
