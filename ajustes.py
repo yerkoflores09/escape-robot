@@ -4,6 +4,6 @@ TILE = 32
 
 FPS = 60
 
-NEGRO = (0, 0, 0)
-BLANCO = (255, 255, 255)
+MORADO = (126, 0, 176) #fondo
+BLANCO = (255, 255, 255) #BLANCO, color laberinto
 AZUL = (50, 100, 255)

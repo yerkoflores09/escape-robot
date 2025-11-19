@@ -1,7 +1,7 @@
 import pygame
 from laberinto import Laberinto
 from player import Player
-from ajustes import WIDTH, HEIGHT, FPS, NEGRO
+from ajustes import WIDTH, HEIGHT, FPS, BLANCO
 
 #clase madre (controla las demás)
 
@@ -27,7 +27,7 @@ class Game():
             keys = pygame.key.get_pressed()
             self.player.update(keys)
 
-            self.screen.fill(NEGRO) #SJDFLKSDF
+            self.screen.fill(BLANCO) #SJDFLKSDF
             self.laberinto.draw(self.screen)
             self.player.draw(self.screen)
 
