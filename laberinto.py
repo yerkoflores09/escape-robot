@@ -1,12 +1,12 @@
 import pygame
-from ajustes import tile, blanco
+from ajustes import TILE, BLANCO
 
 #clase que representa el mapa (nivel 1)
 
 class Laberinto():
     def __init__(self):
         #laberinto simple (de prueba)
-        self.laberinto1 = [
+        self.grid = [
             [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
             [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
             [1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1],
@@ -17,7 +17,7 @@ class Laberinto():
         ]
 
     def draw(self, screen):
-        for y, row in enumerate(self.laberinto1):
+        for y, row in enumerate(self.grid):
             for x, tile in enumerate(row):
                 if tile == 1:
-                    pygame.draw.rect(screen, blanco, (x*tile, y*tile, tile, tile))
+                    pygame.draw.rect(screen, BLANCO, (x*TILE, y*TILE, TILE, TILE))

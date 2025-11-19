@@ -1,14 +1,14 @@
 import pygame
 from laberinto import Laberinto
 from player import Player
-from ajustes import ancho, alto, fps, negro
+from ajustes import WIDTH, HEIGHT, FPS, NEGRO
 
 #clase madre (controla las demás)
 
 class Game():
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((ancho, alto))
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption('Escape Robot')
         self.clock = pygame.time.Clock()
 
@@ -18,7 +18,7 @@ class Game():
     def run(self):
         running = True
         while running:
-            self .clock.tick(fps)
+            self .clock.tick(FPS)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -27,7 +27,7 @@ class Game():
             keys = pygame.key.get_pressed()
             self.player.update(keys)
 
-            self.screen.fill(negro)
+            self.screen.fill(NEGRO) #SJDFLKSDF
             self.laberinto.draw(self.screen)
             self.player.draw(self.screen)
 

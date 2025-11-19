@@ -1,9 +1,9 @@
-ancho = 640
-alto = 480
-tile = 32
+WIDTH = 640
+HEIGHT = 480
+TILE = 32
 
-fps = 60
+FPS = 60
 
-negro = (0, 0, 0)
-blanco = (255, 255, 255)
-azul = (50, 100, 255)
+NEGRO = (0, 0, 0)
+BLANCO = (255, 255, 255)
+AZUL = (50, 100, 255)
