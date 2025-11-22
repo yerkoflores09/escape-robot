@@ -22,11 +22,16 @@ Un robot viaja entre planetas y descubre un mundo con tecnología muy avanzada. 
 El reino de ese planeta lo descubre y comienza una persecución que lo obliga a atravesar varios mundos.  
 Cada planeta está lleno de laberintos y fantasmas que intentan detenerlo.  
 Si supera todos los niveles, el robot logra escapar y regresar a casa.
+---
+
+## Imagen Base de Escape robot
+
+![mapa1](https://github.com/user-attachments/assets/2458d355-c4bb-4fc4-91ca-c971a640cde0)
 
 ---
 
 ## Tecnologías Utilizadas
-- **Python 3**
+- **Python**
 - **Pygame**
 - **VS Code**
 - **GitHub**
