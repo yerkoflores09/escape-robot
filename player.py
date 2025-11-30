@@ -6,33 +6,52 @@ from ajustes import TILE, AZUL
 class Player():
     def __init__(self, laberinto):
         self.laberinto = laberinto
-        self.x = 1
-        self.y = 1
+        self.x = 1 * TILE
+        self.y = 1 * TILE
+
+        self.width = TILE
+        self.height = TILE
         self.color = AZUL
 
-    def puede_moverse(self, nx, ny):
-        return self.laberinto.grid[ny][nx] == 0
-    
-    def moverse(self, dx, dy):
-        nx = self.x + dx
-        ny = self.y + dy
+        self.speed = 6
 
-        if self.puede_moverse(nx, ny):
-            self.x = nx
-            self.y = ny
+    @property
+    def rect(self):
+        return pygame.Rect(self.x, self.y, self.width, self.height)
+
+    def puede_moverse(self, nx, ny):
+        futuro_rect = pygame.Rect(nx, ny, self.width, self.height)
+
+        #colisiones contra las paredes del laberinto
+        for fila in range(len(self.laberinto.grid)):
+            for col in range(len(self.laberinto.grid[fila])):
+                if self.laberinto.grid[fila][col] == 1:  # es muro
+                    muro_rect = pygame.Rect(col*TILE, fila*TILE, TILE, TILE)
+                    if futuro_rect.colliderect(muro_rect):
+                        return False
+        return True
+    
 
     def update(self, keys):
+        nx, ny = self.x, self.y
+
         if keys[pygame.K_UP]:
-            self.moverse(0, -1)
+            ny -= self.speed
 
         if keys[pygame.K_DOWN]:
-            self.moverse(0, 1)
+            ny += self.speed
 
         if keys[pygame.K_LEFT]:
-            self.moverse(-1, 0)
+            nx -= self.speed
 
         if keys[pygame.K_RIGHT]:
-            self.moverse(1, 0)
+            nx += self.speed
+
+        #validar las colisiones
+        if self.puede_moverse(nx, self.y):
+            self.x = nx
+        if self.puede_moverse(self.x, ny):
+            self.y = ny
 
     def draw(self, screen):
-        pygame.draw.rect(screen, self.color, (self.x*TILE, self.y*TILE, TILE, TILE))
+        pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
