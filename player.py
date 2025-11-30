@@ -6,52 +6,49 @@ from ajustes import TILE, AZUL
 class Player():
     def __init__(self, laberinto):
         self.laberinto = laberinto
-        self.x = 1 * TILE
-        self.y = 1 * TILE
-
-        self.width = TILE
-        self.height = TILE
+        self.x = 64
+        self.y = 64
         self.color = AZUL
+        self.speed = 4
+        self.rect = pygame.Rect(self.x, self.y, TILE, TILE)
 
-        self.speed = 6
+    def mover(self, dx,dy):
+        #movimiento en X
+        self.rect.x += dx
+        for muro in self.laberinto.wall_rects:
+            if self.rect.colliderect(muro):
+                if dx > 0:   #moviendo derecha
+                    self.rect.right = muro.left
+                if dx < 0:   #moviendo izquierda
+                    self.rect.left = muro.right
 
-    @property
-    def rect(self):
-        return pygame.Rect(self.x, self.y, self.width, self.height)
-
-    def puede_moverse(self, nx, ny):
-        futuro_rect = pygame.Rect(nx, ny, self.width, self.height)
-
-        #colisiones contra las paredes del laberinto
-        for fila in range(len(self.laberinto.grid)):
-            for col in range(len(self.laberinto.grid[fila])):
-                if self.laberinto.grid[fila][col] == 1:  # es muro
-                    muro_rect = pygame.Rect(col*TILE, fila*TILE, TILE, TILE)
-                    if futuro_rect.colliderect(muro_rect):
-                        return False
-        return True
+        #movimiento en Y
+        self.rect.y += dy
+        for muro in self.laberinto.wall_rects:
+            if self.rect.colliderect(muro):
+                if dy > 0:   # abajo
+                    self.rect.bottom = muro.top
+                if dy < 0:   # arriba
+                    self.rect.top = muro.bottom
     
 
     def update(self, keys):
-        nx, ny = self.x, self.y
+        dx, dy = 0, 0
 
         if keys[pygame.K_UP]:
-            ny -= self.speed
+            dy = -self.speed
 
         if keys[pygame.K_DOWN]:
-            ny += self.speed
+            dy = self.speed
 
         if keys[pygame.K_LEFT]:
-            nx -= self.speed
+            dx = -self.speed
 
         if keys[pygame.K_RIGHT]:
-            nx += self.speed
+            dx = self.speed
 
-        #validar las colisiones
-        if self.puede_moverse(nx, self.y):
-            self.x = nx
-        if self.puede_moverse(self.x, ny):
-            self.y = ny
+        self.mover(dx, dy)
+
 
     def draw(self, screen):
-        pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
+        pygame.draw.rect(screen, self.color, self.rect)
