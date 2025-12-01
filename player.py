@@ -10,7 +10,7 @@ class Player():
         self.y = 64
         self.color = AZUL
         self.speed = 4
-        self.rect = pygame.Rect(self.x, self.y, TILE, TILE)
+        self.rect = pygame.Rect(self.x, self.y, TILE*0.9, TILE*0.9)
 
     def mover(self, dx,dy):
         #movimiento en X
