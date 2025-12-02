@@ -1,5 +1,5 @@
 import pygame
-from ajustes import TILE, AZUL
+from ajustes import TILE
 
 #clase que representa el robot/personaje principal
 
@@ -8,9 +8,22 @@ class Player():
         self.laberinto = laberinto
         self.x = 64
         self.y = 64
-        self.color = AZUL
         self.speed = 4
-        self.rect = pygame.Rect(self.x, self.y, TILE*0.9, TILE*0.9)
+
+        hitbox_size = int(TILE*0.9)
+        offset = (TILE - hitbox_size) // 2
+        self.rect = pygame.Rect(self.x + offset, self.y + offset, hitbox_size, hitbox_size)
+
+        #direccion inicial
+        self.direccion = 'right'
+
+        #sprite
+        self.sprite_base = pygame.image.load('sprites/robot1-yellow.png').convert_alpha()
+        #escalar al tamaño del TILE
+        self.sprite_base = pygame.transform.scale(self.sprite_base, (TILE, TILE))
+
+        self.sprite = self.sprite_base
+        
 
     def mover(self, dx,dy):
         #movimiento en X
@@ -43,12 +56,19 @@ class Player():
 
         if keys[pygame.K_LEFT]:
             dx = -self.speed
+            self.direccion = "left" #gira a la izquierda
+            self.sprite = pygame.transform.flip(self.sprite_base, True, False)
 
         if keys[pygame.K_RIGHT]:
             dx = self.speed
+            self.direccion = "right" #gira a la derecha
+            self.sprite = self.sprite_base
 
         self.mover(dx, dy)
 
 
     def draw(self, screen):
-        pygame.draw.rect(screen, self.color, self.rect)
+
+        draw_x = self.rect.centerx - TILE // 2
+        draw_y = self.rect.centery - TILE // 2
+        screen.blit(self.sprite, (draw_x, draw_y))
