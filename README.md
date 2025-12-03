@@ -23,9 +23,19 @@ El reino de ese planeta lo descubre y comienza una persecución que lo obliga a 
 
 ---
 
-## Imagen Base de Escape robot
+## Primer Nivel de Escape robot
 
 <img width="800" height="600" alt="2025-12-03" src="https://github.com/user-attachments/assets/d72c841d-c615-4a42-9314-b53ebdd5e27d" />
+
+ ---
+
+## Pj Pricipal - Logo - Enemigo  (Bocetos)
+<img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
+
+---
+
+ ## Diagrama de Clases de Escape Robot
+ <img width="665" height="498" alt="diagramaclases" src="https://github.com/user-attachments/assets/88708063-6fbf-4732-abc6-99d825b49ca7" />
 
 
 ---
