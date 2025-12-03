@@ -25,7 +25,8 @@ El reino de ese planeta lo descubre y comienza una persecución que lo obliga a 
 
 ## Imagen Base de Escape robot
 
-![mapa1](https://github.com/user-attachments/assets/2458d355-c4bb-4fc4-91ca-c971a640cde0)
+<img width="800" height="600" alt="2025-12-03" src="https://github.com/user-attachments/assets/d72c841d-c615-4a42-9314-b53ebdd5e27d" />
+
 
 ---
 
