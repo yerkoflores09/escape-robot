@@ -27,7 +27,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
  ---
 
-## Pj Pricipal - Logo - Enemigo  (Bocetos)
+## Pj Principal - Logo - Enemigo  (Bocetos)
 <img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
 
 ---
