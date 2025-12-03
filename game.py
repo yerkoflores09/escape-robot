@@ -16,7 +16,7 @@ class Game():
         self.laberinto = Laberinto()
         self.player = Player(self.laberinto)
 
-        # ENEMIGOS
+        #ENEMIGOS
         self.enemy = Enemy(75, 475) #enemigo que se mueve
         self.enemy2 = Enemy(475, 200) #quieto
         self.enemy3 = Enemy(450, 75) #quieto

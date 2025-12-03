@@ -1,26 +1,26 @@
 import pygame
-from ajustes import TILE
+from ajustes import TILE, ROJO
 
 class Enemy:
     def __init__(self, x, y):
-        # posición inicial
+        #posición inicial
         self.start_x = x
         self.start_y = y
         
-        # rectángulo del enemigo
+        #rectángulo del enemigo
         self.rect = pygame.Rect(x, y, int(TILE*0.9), int(TILE*0.9))
-        self.color = (255, 0, 0)  # rojo
+        self.color = ROJO
 
-        # Movimiento vertical
+        #movimiento vertical
         self.speed = 2
-        self.move_range = 3 * TILE   # 3 espacios hacia arriba y abajo
-        self.direction = 1           # 1 = abajo, -1 = arriba
+        self.move_range = 3 * TILE #3 espacios hacia arriba y abajo
+        self.direction = 1 #1 = abajo, -1 = arriba
 
     def update(self):
-        # Mover en Y (vertical)
+        #mover en Y (vertical)
         self.rect.y += self.direction * self.speed
 
-        # Cambiar dirección cuando llega al límite
+        #cambiar dirección cuando llega al límite
         if self.rect.y > self.start_y + self.move_range:
             self.direction = -1
         if self.rect.y < self.start_y:
