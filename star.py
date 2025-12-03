@@ -4,7 +4,7 @@ from ajustes import TILE
 class Star:
     def __init__(self, x, y):
 
-        self.image_original = pygame.image.load("sprites/star.png").convert_alpha()
+        self.image_original = pygame.image.load('sprites/star.png').convert_alpha()
 
         #ajusta el tamaño 
         self.image = pygame.transform.scale(self.image_original, (TILE, TILE))

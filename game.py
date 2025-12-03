@@ -29,7 +29,7 @@ class Game():
         ]
 
         #fuente del contador
-        self.font = pygame.font.SysFont("Arial", 24)
+        self.font = pygame.font.SysFont('Arial', 24)
 
 
     def reset_level(self):
@@ -71,7 +71,7 @@ class Game():
                 if star.collected:
                     stars_collected += 1
 
-            # DIBUJAR TODO
+            #dibujar todo
             self.screen.fill(NEGRO)
             self.laberinto.draw(self.screen)
 
@@ -88,7 +88,7 @@ class Game():
             self.player.draw(self.screen)
 
             #dibujar contador
-            text = self.font.render(f"{stars_collected}/3", True, (255, 255, 255))
+            text = self.font.render(f'{stars_collected}/3', True, (255, 255, 255))
             self.screen.blit(text, (5, 5))
 
             pygame.display.flip()

@@ -3,11 +3,11 @@ from ajustes import TILE, ROJO
 
 class Enemy:
     def __init__(self, x, y):
-        #posición inicial
+        #posicion inicial
         self.start_x = x
         self.start_y = y
         
-        #rectángulo del enemigo
+        #rectangulo del enemigo
         self.rect = pygame.Rect(x, y, int(TILE*0.9), int(TILE*0.9))
         self.color = ROJO
 
@@ -20,7 +20,7 @@ class Enemy:
         #mover en Y (vertical)
         self.rect.y += self.direction * self.speed
 
-        #cambiar dirección cuando llega al límite
+        #cambiar direccion cuando llega al limite
         if self.rect.y > self.start_y + self.move_range:
             self.direction = -1
         if self.rect.y < self.start_y:
