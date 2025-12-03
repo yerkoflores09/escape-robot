@@ -27,13 +27,14 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
  ---
 
-## Pj Pricipal - Logo - Enemigo  (Bocetos)
+## Pj Principal - Logo - Enemigo  (Bocetos)
 <img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
 
 ---
 
  ## Diagrama de Clases de Escape Robot
- <img width="665" height="498" alt="diagramaclases" src="https://github.com/user-attachments/assets/88708063-6fbf-4732-abc6-99d825b49ca7" />
+<img width="942" height="656" alt="diagrama-de-clases2" src="https://github.com/user-attachments/assets/af37fa73-19df-441b-887e-e916d2f9dd76" />
+
 
 
 ---
