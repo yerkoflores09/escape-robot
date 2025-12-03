@@ -56,12 +56,12 @@ class Player():
 
         if keys[pygame.K_LEFT]:
             dx = -self.speed
-            self.direccion = "left" #gira a la izquierda
+            self.direccion = 'left' #gira a la izquierda
             self.sprite = pygame.transform.flip(self.sprite_base, True, False)
 
         if keys[pygame.K_RIGHT]:
             dx = self.speed
-            self.direccion = "right" #gira a la derecha
+            self.direccion = 'right' #gira a la derecha
             self.sprite = self.sprite_base
 
         self.mover(dx, dy)
