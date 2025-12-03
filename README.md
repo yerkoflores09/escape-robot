@@ -17,15 +17,24 @@ Tu misión es escapar mientras avanzas por distintos planetas conectados por por
 ---
 
 ## Lore del Juego
-Un robot viaja entre planetas y descubre un mundo con tecnología muy avanzada. Con la intención de ayudar a su propio planeta, intenta obtener información secreta, pero accidentalmente entra a una zona restringida.  
-
-El reino de ese planeta lo descubre y comienza una persecución que lo obliga a atravesar varios mundos. Cada planeta está lleno de laberintos y fantasmas que intentan detenerlo. Si supera todos los niveles, el robot logra escapar y regresar a casa.
+Un robot proveniente de un planeta lejano está huyendo desesperadamente de un poderoso reino que lo persigue a través de distintos mundos. Todo comenzó cuando, durante sus viajes interplanetarios, descubrió un planeta con tecnología extremadamente avanzada. Con la intención de ayudar a su propio hogar, decidió infiltrarse para obtener información valiosa. Sin embargo, terminó entrando en un lugar prohibido y el reino de ese planeta descubrió sus intenciones, iniciando una persecución implacable.
 
 ---
 
-## Imagen Base de Escape robot
+## Primer Nivel de Escape robot
 
-![mapa1](https://github.com/user-attachments/assets/2458d355-c4bb-4fc4-91ca-c971a640cde0)
+<img width="800" height="600" alt="2025-12-03" src="https://github.com/user-attachments/assets/d72c841d-c615-4a42-9314-b53ebdd5e27d" />
+
+ ---
+
+## Pj Pricipal - Logo - Enemigo  (Bocetos)
+<img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
+
+---
+
+ ## Diagrama de Clases de Escape Robot
+ <img width="665" height="498" alt="diagramaclases" src="https://github.com/user-attachments/assets/88708063-6fbf-4732-abc6-99d825b49ca7" />
+
 
 ---
 
