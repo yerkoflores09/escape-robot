@@ -3,28 +3,28 @@ import sys
 
 pygame.init()
 
-# Pantalla
+#pantalla
 ANCHO, ALTO = 800, 600
 pantalla = pygame.display.set_mode((ANCHO, ALTO))
 pygame.display.set_caption("Escape Robot - Menú")
 
-# Colores
+#colores
 BLANCO = (255, 255, 255)
 NEGRO = (0, 0, 0)
 GRIS = (180, 180, 180)
 GRIS_OSCURO = (100, 100, 100)
 MORADO = (58, 0, 112)
 
-# Fuentes
-boton_fuente = pygame.font.Font("04B_30__.TTF", 50)
+#fuentes
+boton_fuente = pygame.font.Font("sprites/04B_30__.TTF", 50)
 
-#LOGO
-logo = pygame.image.load("logo.jpg").convert_alpha()
+#logo
+logo = pygame.image.load("sprites/logo.jpg").convert_alpha()
 logo = pygame.transform.scale(logo, (200, 200))
 
 
 
-# Función dibujar botón
+#función dibujar botón
 def dibujar_boton(texto, x, y, ancho, alto, color_normal, color_hover, mouse_pos):
     if x <= mouse_pos[0] <= x + ancho and y <= mouse_pos[1] <= y + alto:
         color = color_hover
@@ -39,21 +39,21 @@ def dibujar_boton(texto, x, y, ancho, alto, color_normal, color_hover, mouse_pos
     
     click = pygame.mouse.get_pressed()
     if click[0] == 1 and x <= mouse_pos[0] <= x + ancho and y <= mouse_pos[1] <= y + alto:
-        pygame.time.delay(200)  # Evita múltiples clics
+        pygame.time.delay(200)  #evita multiples clics
         return True
     return False
 
-# Bucle principal
+#bucle principal
 while True:
     pantalla.fill(NEGRO)
     mouse_pos = pygame.mouse.get_pos()
 
     
-    # Botón JUGAR
+    #botón JUGAR
     if dibujar_boton("Jugar", ANCHO//2 - 150, 250, 300, 70, MORADO, GRIS, mouse_pos):
         print("Has pulsado JUGAR")
 
-    # Botón OPCIONES
+    #botón OPCIONES
     if dibujar_boton("Opciones", ANCHO//2 - 150, 350, 300, 70, MORADO, GRIS, mouse_pos):
         print("Has pulsado OPCIONES")
 
