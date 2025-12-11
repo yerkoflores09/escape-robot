@@ -6,10 +6,15 @@ class Enemy:
         #posicion inicial
         self.start_x = x
         self.start_y = y
+
+        #cargar sprite
+        self.image = pygame.image.load('sprites/fantasma.png').convert_alpha()
         
-        #rectangulo del enemigo
-        self.rect = pygame.Rect(x, y, int(TILE*0.9), int(TILE*0.9))
-        self.color = ROJO
+        #redimensionar el tamaño
+        self.image = pygame.transform.scale(self.image, (int(TILE*0.9), int(TILE*0.9)))
+
+        #rectangulo basado en la imagen
+        self.rect = self.image.get_rect(topleft=(x, y))
 
         #movimiento vertical
         self.speed = 2
@@ -27,4 +32,4 @@ class Enemy:
             self.direction = 1
 
     def draw(self, screen):
-        pygame.draw.rect(screen, self.color, self.rect)
+        screen.blit(self.image, self.rect)
