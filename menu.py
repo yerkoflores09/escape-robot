@@ -44,24 +44,25 @@ def dibujar_boton(texto, x, y, ancho, alto, color_normal, color_hover, mouse_pos
     return False
 
 #bucle principal
-while True:
-    pantalla.fill(NEGRO)
-    mouse_pos = pygame.mouse.get_pos()
+def mostrar_menu():
+    while True:
+        pantalla.fill(NEGRO)
+        mouse_pos = pygame.mouse.get_pos()
 
     
-    #botón JUGAR
-    if dibujar_boton("Jugar", ANCHO//2 - 150, 250, 300, 70, MORADO, GRIS, mouse_pos):
-        print("Has pulsado JUGAR")
+        #botón JUGAR
+        if dibujar_boton("Jugar", ANCHO//2 - 150, 250, 300, 70, MORADO, GRIS, mouse_pos):
+            return "jugar"
 
-    #botón OPCIONES
-    if dibujar_boton("Opciones", ANCHO//2 - 150, 350, 300, 70, MORADO, GRIS, mouse_pos):
-        print("Has pulsado OPCIONES")
+        #botón OPCIONES
+        if dibujar_boton("Opciones", ANCHO//2 - 150, 350, 300, 70, MORADO, GRIS, mouse_pos):
+            print("Opciones")
 
-    for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
+        for evento in pygame.event.get():
+            if evento.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
     
-    pantalla.blit(logo, (ANCHO//2 - logo.get_width()//2, 30))
+        pantalla.blit(logo, (ANCHO//2 - logo.get_width()//2, 30))
     
-    pygame.display.update()
+        pygame.display.update()
