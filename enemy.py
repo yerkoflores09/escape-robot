@@ -1,7 +1,7 @@
 import pygame
 from ajustes import TILE, ROJO
 
-class Enemy:
+class Enemy():
     def __init__(self, x, y):
         #posicion inicial
         self.start_x = x
