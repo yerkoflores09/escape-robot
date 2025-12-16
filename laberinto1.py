@@ -1,7 +1,7 @@
 import pygame
 from ajustes import TILE, MORADO
 
-# Nivel 1 - Mapa nuevo
+#Nivel 1 - Mapa nuevo
 class Laberinto1():
     def __init__(self):
         self.grid = [

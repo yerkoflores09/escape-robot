@@ -83,6 +83,7 @@ class Game():
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
+                    return None 
 
             keys = pygame.key.get_pressed()
             self.player.update(keys)
@@ -114,7 +115,7 @@ class Game():
                         self.level = 2
                         self.cargar_nivel()
                     else:
-                        running = False  # fin del juego
+                        return 'completado' 
 
             # dibujar
             self.screen.fill(NEGRO)
