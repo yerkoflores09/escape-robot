@@ -21,13 +21,21 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Primer Nivel de Escape robot
+## Menu Principal de Escape Robot
+<img width="795" height="511" alt="Captura de pantalla 2025-12-16 205608" src="https://github.com/user-attachments/assets/ccbcc457-bf70-493c-b229-547fb82bb6ee" />
 
-<img width="800" height="600" alt="2025-12-03" src="https://github.com/user-attachments/assets/d72c841d-c615-4a42-9314-b53ebdd5e27d" />
+---
+
+## Primer y Segundo Nivel de Escape robot
+
+<img width="794" height="594" alt="Captura de pantalla 2025-12-16 205639" src="https://github.com/user-attachments/assets/b410cdaf-5b50-4930-a5e3-006f229f1d15" />
+
+<img width="794" height="595" alt="Captura de pantalla 2025-12-16 205807" src="https://github.com/user-attachments/assets/bd80c8a0-21ea-4b97-9621-5982b137fec2" />
+
 
  ---
 
-## Pj Principal - Logo - Enemigo  (Bocetos)
+## Pj Principal - Logo - Enemigo  
 <img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
 
 ---
