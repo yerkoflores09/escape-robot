@@ -11,7 +11,7 @@ class Menu:
         pygame.display.set_caption("Escape Robot - Menú")
 
         # fuentes
-        self.boton_fuente = pygame.font.Font("sprites/04B_30__.TTF", 50)
+        self.boton_fuente = pygame.font.Font("sprites/04B_30__.TTF", 40)
         self.titulo_fuente = pygame.font.Font("sprites/04B_30__.TTF", 40)
         self.texto_fuente = pygame.font.Font("sprites/04B_30__.TTF", 20)
 

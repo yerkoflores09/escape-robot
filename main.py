@@ -21,7 +21,7 @@ def main():
 
         elif opcion == "opciones":
             print("Opciones")
-            pygame.time.delay(300) #corregir
+            break
 
 if __name__ == "__main__":
     main()
