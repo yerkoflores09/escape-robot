@@ -65,7 +65,8 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 ---
 
  ## Diagrama de Clases de Escape Robot
-<img width="942" height="656" alt="diagrama-de-clases2" src="https://github.com/user-attachments/assets/af37fa73-19df-441b-887e-e916d2f9dd76" />
+<img width="1059" height="649" alt="image" src="https://github.com/user-attachments/assets/1c6048f3-aa91-46eb-b999-ad7288abd793" />
+
 
 
 
