@@ -1,4 +1,4 @@
-# Escape Robot  
+# 🤖 Escape Robot  
 Videojuego 2D desarrollado en Python y Pygame  
 Proyecto para la asignatura **Programación Orientada a Objetos – 2025**
 
@@ -45,14 +45,14 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Primer Nivel de Escape robot
+## 🗺️ Primer Nivel de Escape robot
 
 <img width="794" height="594" alt="Captura de pantalla 2025-12-16 205639" src="https://github.com/user-attachments/assets/b410cdaf-5b50-4930-a5e3-006f229f1d15" />
 
 
 ---
 
-## Segundo Nivel de Escape robot
+## 🗺️ Segundo Nivel de Escape robot
 
 <img width="794" height="595" alt="Captura de pantalla 2025-12-16 205807" src="https://github.com/user-attachments/assets/bd80c8a0-21ea-4b97-9621-5982b137fec2" />
 
@@ -71,7 +71,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 - **Python**
 - **Pygame**
 - **VS Code**
