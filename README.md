@@ -23,10 +23,10 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ## Controles del Juego
 
-⬆️ Flecha arriba: Mover hacia arriba
-⬇️ Flecha abajo: Mover hacia abajo
-⬅️ Flecha izquierda: Mover hacia la izquierda
-➡️ Flecha derecha: Mover hacia la derecha
+- ⬆️ Flecha arriba: Mover hacia arriba
+- ⬇️ Flecha abajo: Mover hacia abajo
+- ⬅️ Flecha izquierda: Mover hacia la izquierda
+- ➡️ Flecha derecha: Mover hacia la derecha
 
 
 ---
