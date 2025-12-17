@@ -21,7 +21,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Controles del Juego
+## 🧠 Controles del Juego
 
 - ⬆️ Flecha arriba: Mover hacia arriba
 - ⬇️ Flecha abajo: Mover hacia abajo
@@ -31,7 +31,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Reglas del Juego
+## 📋 Reglas del Juego
 
 - El jugador debe recolectar todas las estrellas del nivel.
 - Si el jugador toca un enemigo, el nivel se reinicia.
@@ -40,7 +40,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
  
 ---
 
-## Menu Principal de Escape Robot
+## 🧩 Menu Principal de Escape Robot
 <img width="795" height="511" alt="Captura de pantalla 2025-12-16 205608" src="https://github.com/user-attachments/assets/ccbcc457-bf70-493c-b229-547fb82bb6ee" />
 
 ---
@@ -59,7 +59,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
  ---
 
-## Pj Principal - Logo - Enemigo  
+## 🎨 Pj Principal - Logo - Enemigo  
 <img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
 
 ---
@@ -79,7 +79,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Integrantes
+## 👥 Integrantes
 - Yerko Flores
 - Joaquín Mansilla
 - Marco Saldivia
