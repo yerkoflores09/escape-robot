@@ -1,4 +1,4 @@
-# Escape Robot  
+# 🤖 Escape Robot  
 Videojuego 2D desarrollado en Python y Pygame  
 Proyecto para la asignatura **Programación Orientada a Objetos – 2025**
 
@@ -21,13 +21,45 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Primer Nivel de Escape robot
+## 🧠 Controles del Juego
 
-<img width="800" height="600" alt="2025-12-03" src="https://github.com/user-attachments/assets/d72c841d-c615-4a42-9314-b53ebdd5e27d" />
+- ⬆️ Flecha arriba: Mover hacia arriba
+- ⬇️ Flecha abajo: Mover hacia abajo
+- ⬅️ Flecha izquierda: Mover hacia la izquierda
+- ➡️ Flecha derecha: Mover hacia la derecha
+
+
+---
+
+## 📋 Reglas del Juego
+
+- El jugador debe recolectar todas las estrellas del nivel.
+- Si el jugador toca un enemigo, el nivel se reinicia.
+- Al recolectar todas las estrellas, el portal se activa.
+- Al entrar al portal, se avanza al siguiente nivel.
+ 
+---
+
+## 🧩 Menu Principal de Escape Robot
+<img width="795" height="511" alt="Captura de pantalla 2025-12-16 205608" src="https://github.com/user-attachments/assets/ccbcc457-bf70-493c-b229-547fb82bb6ee" />
+
+---
+
+## 🗺️ Primer Nivel de Escape robot
+
+<img width="794" height="594" alt="Captura de pantalla 2025-12-16 205639" src="https://github.com/user-attachments/assets/b410cdaf-5b50-4930-a5e3-006f229f1d15" />
+
+
+---
+
+## 🗺️ Segundo Nivel de Escape robot
+
+<img width="794" height="595" alt="Captura de pantalla 2025-12-16 205807" src="https://github.com/user-attachments/assets/bd80c8a0-21ea-4b97-9621-5982b137fec2" />
+
 
  ---
 
-## Pj Principal - Logo - Enemigo  (Bocetos)
+## 🎨 Pj Principal - Logo - Enemigo  
 <img width="613" height="162" alt="boceto1" src="https://github.com/user-attachments/assets/4310c0c7-fa57-4821-b5fe-cb4a88541439" />
 
 ---
@@ -39,7 +71,7 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 - **Python**
 - **Pygame**
 - **VS Code**
@@ -47,7 +79,14 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
-## Integrantes
+## 👥 Integrantes
 - Yerko Flores
 - Joaquín Mansilla
 - Marco Saldivia
+
+
+---
+
+## 🔮 Trabajo a Futuro
+
+A futuro, Escape Robot podría incorporar más niveles con mayor dificultad y enemigos con movimientos más complejos. También se planea mejorar las animaciones y añadir efectos visuales para enriquecer la experiencia de juego, junto con sistemas de puntaje u opciones de dificultad que aumenten la rejugabilidad.
