@@ -83,3 +83,10 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 - Yerko Flores
 - Joaquín Mansilla
 - Marco Saldivia
+
+
+---
+
+## 🔮 Trabajo a Futuro
+
+A futuro, Escape Robot podría incorporar más niveles con mayor dificultad y enemigos con movimientos más complejos. También se planea mejorar las animaciones y añadir efectos visuales para enriquecer la experiencia de juego, junto con sistemas de puntaje u opciones de dificultad que aumenten la rejugabilidad.
