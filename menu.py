@@ -8,15 +8,15 @@ class Menu:
         self.screen = screen
         self.clock = pygame.time.Clock()
 
-        pygame.display.set_caption("Escape Robot - Menú")
+        pygame.display.set_caption('Escape Robot - Menu')
 
         # fuentes
-        self.boton_fuente = pygame.font.Font("sprites/04B_30__.TTF", 40)
-        self.titulo_fuente = pygame.font.Font("sprites/04B_30__.TTF", 40)
-        self.texto_fuente = pygame.font.Font("sprites/04B_30__.TTF", 20)
+        self.boton_fuente = pygame.font.Font('sprites/04B_30__.TTF', 40)
+        self.titulo_fuente = pygame.font.Font('sprites/04B_30__.TTF', 40)
+        self.texto_fuente = pygame.font.Font('sprites/04B_30__.TTF', 20)
 
         # logo
-        self.logo = pygame.image.load("sprites/logo.jpg").convert_alpha()
+        self.logo = pygame.image.load('sprites/logo.jpg').convert_alpha()
         self.logo = pygame.transform.scale(self.logo, (200, 200))
 
     
@@ -49,19 +49,19 @@ class Menu:
 
             # botón JUGAR
             if self.dibujar_boton(
-                "Jugar",
+                'Jugar',
                 WIDTH // 2 - 150, 250, 300, 70,
                 MORADO, GRIS, mouse_pos
             ):
-                return "jugar"
+                return 'jugar'
 
             # botón OPCIONES
             if self.dibujar_boton(
-                "Opciones",
+                'Opciones',
                 WIDTH // 2 - 150, 350, 300, 70,
                 MORADO, GRIS, mouse_pos
             ):
-                return "opciones"
+                return 'opciones'
 
             for evento in pygame.event.get():
                 if evento.type == pygame.QUIT:
@@ -91,12 +91,10 @@ class Menu:
                         pygame.quit()
                         sys.exit()
 
-            titulo = self.titulo_fuente.render("¡JUEGO COMPLETADO!", True, BLANCO)
-            mensaje = self.texto_fuente.render("Gracias por jugar", True, BLANCO)
-            salir = self.texto_fuente.render("Presiona ESC para salir", True, BLANCO)
+            titulo = self.titulo_fuente.render('JUEGO COMPLETADO!', True, BLANCO)
+            salir = self.texto_fuente.render('Presiona ESC para salir', True, BLANCO)
 
             self.screen.blit(titulo, titulo.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 60)))
-            self.screen.blit(mensaje, mensaje.get_rect(center=(WIDTH // 2, HEIGHT // 2)))
             self.screen.blit(salir, salir.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 60)))
 
             pygame.display.update()
