@@ -21,6 +21,25 @@ Un robot proveniente de un planeta lejano está huyendo desesperadamente de un p
 
 ---
 
+## Controles del Juego
+
+⬆️ Flecha arriba: Mover hacia arriba
+⬇️ Flecha abajo: Mover hacia abajo
+⬅️ Flecha izquierda: Mover hacia la izquierda
+➡️ Flecha derecha: Mover hacia la derecha
+
+
+---
+
+## Reglas del Juego
+
+- El jugador debe recolectar todas las estrellas del nivel.
+- Si el jugador toca un enemigo, el nivel se reinicia.
+- Al recolectar todas las estrellas, el portal se activa.
+- Al entrar al portal, se avanza al siguiente nivel.
+ 
+---
+
 ## Menu Principal de Escape Robot
 <img width="795" height="511" alt="Captura de pantalla 2025-12-16 205608" src="https://github.com/user-attachments/assets/ccbcc457-bf70-493c-b229-547fb82bb6ee" />
 
