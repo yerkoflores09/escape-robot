@@ -14,7 +14,7 @@ class Game():
         pygame.mixer.init()
         pygame.mixer.music.set_volume(0.4)
 
-        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
         pygame.display.set_caption('Escape Robot')
         self.clock = pygame.time.Clock()
 
